@@ -1,0 +1,16 @@
+<h1>All List</h1>
+<br />
+
+<% if @lists.any? %>
+  <ul>
+    <% @list.each do |list| %>
+      <li>
+        <%= link_to list.name, list_path(list) %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <h3>No list found. Please create one.</h3>
+<% end %>
+
+<%= link_to 'New list', new_list_path %>

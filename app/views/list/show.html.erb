@@ -1,0 +1,8 @@
+<h1><%= @list.name %> Info:</h1> 
+<br />
+
+<%= link_to 'Edit', edit_school_path(@school) %>
+
+<%= link_to 'Delete', school_path(@school), method: :delete %>
+
+<%= link_to 'All Lists', schools_path %>
